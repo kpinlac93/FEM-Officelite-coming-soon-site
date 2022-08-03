@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.tab {
+    visibility: hidden;
+    position: fixed;
+}
+
+body {
+    background-image: url("assets/home/bg-pattern-header.svg");
+    background-repeat: no-repeat;
+    background-position: 700px -450px;
+}
+
+h1 {
+    font-size: 56px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+
+.logo {
+    background-image: url("assets/shared/logo.svg");
+    width: 155px;
+    height: 30px;
+    margin: 100px;
+    margin-left: 10vw;
+    margin-top: 50px;
+}
+.page .hero {
+    display: flex;
+    justify-content: space-between;
+}
+.hero .text {
+    margin-left: 10vw;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    width: auto;
+}
+.hero h1 {
+    line-height: 1.2em;
+}
+.hero p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.432);
+    line-height: 1.2em;
+    margin-top: 30px;
+}
+.button {
+    background-color: #5175FF;
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    
+}
+.hero .button {
+    background-color: #5175FF;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 25px;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+}
+.hero .imgs {
+    background-image: url("assets/home/illustration-charts.svg");
+    height: auto;
+    width: 525px;
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 100px;
+    position: relative;
+    z-index: 10;
+}
+.cards .card {
+    background-color: gray;
+    text-align: center;
+    border-radius: 13px;
+    padding: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.card h2 {
+    margin-bottom: 35px;
+}
+.card h1 {
+    margin-bottom: 15px;
+}
+.card h3 {
+    margin-bottom: 75px;
+}
+.features p {
+    margin-bottom: 25px;
+}
+.features {
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.card .button {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.cards .pro {
+    background-color: #5175FF;
+    background-image: url("assets/home/bg-pattern-pricing.svg");
+    background-position: center -390px;
+    background-repeat: no-repeat;
+    color: white;
+}
+.cards .basic {
+    background-color: white;
+}
+.basic .button {
+    background-color: #5174ff3d;
+    color: #5174ff;
+}
+.pro .button {
+    background-color: white;
+    color: #5175FF;
+}
+
+.footerbg {
+    background-color: rgb(20, 20, 20);
+    background-image: url("assets/home/bg-pattern-footer.svg");
+    background-position: -650px -680px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    margin-top: -240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+
+.countdown {
+    color: white;
+}
+.countdown h2 {
+    margin-top: 300px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.countdown span {
+    color:#5174ff;
+}
+.timer {
+    display: flex;
+}
+.timer div {
+    background-color: rgb(54, 50, 73);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.timer p {
+    margin-top: 10px;
+    letter-spacing: unset;
+}
+
+
+.footerbg .button {
+    display: inline-block;
+    margin-top: 300px;
+    color: white;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .desk {
+        visibility: hidden;
+        position: fixed;
+    }
+    .tab {
+        visibility: visible;
+        position: relative;
+    }
+    .hero .text {
+        margin-left: 5vw;
+    }
+    .logo {
+        margin-left: 5vw;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero .imgs {
+        background-size: contain;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 4vh;
+    }
+    .cards .card {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card p {
+        text-align: start;
+    }
+    .card h3 {
+        margin-bottom: 30px;
+    }
+    .cards .pro {
+        background-color: #5175FF;
+        background-image: url("assets/home/bg-pattern-pricing.svg");
+        background-position: -280px -300px;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        height: 100%;
+        margin: unset;
+    }
+    .features p {
+        margin: unset;
+    }
+    .footerbg {
+        background-color: rgb(20, 20, 20);
+        background-image: url("assets/home/bg-pattern-footer.svg");
+        background-position: -620px -280px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        margin-top: -540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+    .countdown h2 {
+        margin-top: 600px;
+        text-align: center;
+    }
+    .footerbg .button {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .desk {
+        visibility: visible;
+        position: relative;
+    }
+    .tab {
+        visibility: hidden;
+        position: fixed;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero .imgs {
+        height: 200px;
+        background-position: center;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .cards .card {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        display: unset;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .card p {
+        text-align: center;
+    }
+    .card .button {
+        margin-top: 30px;
+    }
+    .countdown h1 {
+        font-size: 36px;
+    }
+    .timer {
+        display: flex;
+        gap: 2vw;
+    }
+    .timer div {
+        margin: 0;
+    }
+}

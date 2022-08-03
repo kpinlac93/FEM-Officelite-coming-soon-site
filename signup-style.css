@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+.logo {
+    background-image: url("assets/shared/logo.svg");
+    background-repeat: no-repeat;
+    width: 155px;
+    height: 30px;
+    margin-left: 10vw;
+    padding-top: 5vh;
+    position: fixed;
+}
+
+.page {
+    height: auto;
+}
+.content {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.content .text {
+    width: 100%;
+}
+.text h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.text p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 35px;
+    margin-right: 35px;
+}
+.text .timer h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.timer h2 span {
+    font-size: 1em;
+    color: #5175FF;
+}
+.text .flex {
+    display: flex;
+    gap: 15px;
+}
+.text .flex div {
+    background-color: #5174ff34;
+    color: #5175FF;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 700;
+}
+.text .flex h1 {
+    margin: 0;
+}
+.text .flex p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-weight: 700;
+}
+.content .input {
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+.input div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.input .row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+}
+.input input {
+    width: 100%;
+    border: unset;
+    outline: unset;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.473);
+}
+.input .name {
+    margin-top: 30px;
+}
+.input .pack {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input .pname {
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.pname span {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.411);
+    font-weight: 700;
+}
+.pack .chev {
+    background-image: url("assets/sign-up/icon-arrow-down.svg");
+    width: 13px;
+    height: 8px;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+.pack .dropdown {
+    visibility: hidden;
+    position: absolute;
+}
+.input .button {
+    background-color: #5175FF;
+    color: white;
+    display: inline-block;
+    padding: 18px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+
+
+
+.bgimg {
+    background-color: rgb(34, 34, 34);
+    background-image: url("assets/sign-up/bg-pattern-side.svg");
+    background-position: center -750px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 35%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.filler {
+    position: absolute;
+}
+
+
+
+@media (max-width: 800px) {
+    .logo {
+        background-image: url("assets/shared/logo.svg");
+        width: 155px;
+        height: 30px;
+        margin-left: 5vw;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        position: unset;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content .text {
+        text-align: center;
+        margin-top: 200px;
+    }
+    .text p {
+        margin-left: 20px;
+    }
+    .flex {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .bgimg {
+        bottom: 0;
+        top: unset;
+        left: 0;
+        right: 0;
+        width: unset;
+        height: 30vh;
+    }
+    .page .input {
+        margin-bottom: 100px;
+    }
+    .filler {
+        position: relative;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .content .input {
+        width: 100%;
+    }
+    .page .content {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .timer .flex {
+        gap: 7px;
+    }
+    .flex h1 {
+        font-size: 2em;
+    }
+    .input div {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
